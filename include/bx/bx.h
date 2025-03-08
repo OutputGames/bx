@@ -6,10 +6,19 @@
 #ifndef BX_H_HEADER_GUARD
 #define BX_H_HEADER_GUARD
 
+<<<<<<< Updated upstream
+=======
+#ifndef _WIN32
+	#include <alloca.h> // alloca
+#else
+	#include <malloc.h>
+#endif
+>>>>>>> Stashed changes
 #include <stdarg.h> // va_list
 #include <stddef.h> // ptrdiff_t
 #include <stdint.h> // uint32_t
 #include <stdlib.h> // size_t
+
 
 #include "platform.h"
 #include "config.h"

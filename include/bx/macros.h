@@ -82,10 +82,15 @@
 #	define BX_PRINTF_ARGS(_format, _args)
 #	define BX_THREAD_LOCAL __declspec(thread)
 #	define BX_ATTRIBUTE(_x)
+<<<<<<< Updated upstream
 #	define BX_ATTRIBUTE_INTRINSIC [[msvc::intrinsic]]
 
 extern "C" void* __cdecl _alloca(size_t _size);
 #	define BX_STACK_ALLOC(_size) ::_alloca(_size)
+=======
+extern "C" void* __cdecl _alloca(size_t _size);
+#define BX_STACK_ALLOC(_size) ::_alloca(_size)
+>>>>>>> Stashed changes
 #else
 #	error "Unknown BX_COMPILER_?"
 #endif
